@@ -17,9 +17,6 @@ import mimetypes
 import re
 from io import BytesIO
 
-"""Specify the directory if you need to"""
-# os.chdir("directory")
-
 CERT_FILE = os.path.expanduser("~/.ssh/cert.pem")
 KEY_FILE = os.path.expanduser("~/.ssh/key.pem")
 SSL_CMD = "openssl req -newkey rsa:2048 -new -nodes -x509 " \
